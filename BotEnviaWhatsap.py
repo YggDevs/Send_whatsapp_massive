@@ -57,26 +57,22 @@ def sendwhatmsg_instantly(
     pg.hotkey("ctrl","w")
     print("sending")
 
-
-
-
-
-with open('telefonos.txt', 'r') as fichero:
-    for linea in fichero:
-        print("se esta imprimiendo esto",linea)
-        time.sleep(2)
-        
-        sendwhatmsg_instantly(linea, "Hello")
-        time.sleep(20)
-       
-"""
 fichero = open('telefonos.txt')
 lineas = fichero.readlines()
-for linea in lineas:
-    print(linea)
-        
-"""
+for i in range(len(lineas)):
+    s= lineas[i].split(',') #s se usa para separar
+    print(s[1])             # imprime los telefonos primera columna
+    sendwhatmsg_instantly(s[0], s[1])  #se envian los datos al metodo para ser impreso
+    time.sleep(20)
+
 fichero.close()
+"""
+aun no funciona correctamente los mensajes son copiados en el portapapeles pero no se envian
+
+
+"""
+
+
 
 #sendwhatmsg_instantly("+34687634068", "Hello")
 
