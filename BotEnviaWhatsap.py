@@ -33,7 +33,7 @@ def sendwhatmsg_instantly(
 ) -> None:
     
     web.open(f"https://web.whatsapp.com/send?phone={phone_no}&text={quote(message)}")
-    time.sleep(4)
+    time.sleep(30)
    
     time.sleep(wait_time - 4)
     pg.press("enter")
