@@ -14,7 +14,7 @@ import pyperclip
 import keyboard
 from pywhatkit.core import core, exceptions, log
 
-#https://web.whatsapp.com/send?phone=999999999
+#https://web.whatsapp.com/send?phone=34666555444    url para el envio de mensajes
 
 pg.FAILSAFE = False
 
@@ -55,10 +55,9 @@ def sendwhatmsg_instantly(
 fichero = open('telefonos.txt')
 lineas = fichero.readlines()
 for i in range(len(lineas)):
-    s= lineas[i].split(',') #s se usa para separar             
+    s= lineas[i].split(',') #s separador en el txt            
     sendwhatmsg_instantly(s[0], s[1])  #se envian los datos al metodo para ser impreso
     print(s[0],s[1], end=" ") # imprime los telefonos primera columna
     time.sleep(20)
 
 fichero.close()
-
