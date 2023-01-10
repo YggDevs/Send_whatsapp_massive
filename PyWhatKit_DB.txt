@@ -83,3 +83,58 @@ Time: 15:13
 Group ID: 687634068
 Message: hola4
 --------------------
+Date: 9/1/2023
+Time: 13:41
+Group ID: 687634068
+Message: hola1
+--------------------
+Date: 9/1/2023
+Time: 13:42
+Group ID: 687634068
+Message: hola2
+--------------------
+Date: 9/1/2023
+Time: 13:45
+Group ID: 687634068
+Message: hola1
+--------------------
+Date: 9/1/2023
+Time: 13:46
+Group ID: 687634068
+Message: hola2
+--------------------
+Date: 9/1/2023
+Time: 13:48
+Group ID: 687634068
+Message: hola1
+--------------------
+Date: 9/1/2023
+Time: 13:49
+Group ID: 687634068
+Message: hola2
+--------------------
+Date: 10/1/2023
+Time: 9:43
+Group ID: 687634068
+Message: hola1
+--------------------
+Date: 10/1/2023
+Time: 9:44
+Group ID: 687634068
+Message: hola2
+--------------------
+Date: 10/1/2023
+Time: 9:46
+Group ID: 687634068
+Message: hola1
+--------------------
+Date: 10/1/2023
+Time: 9:47
+Group ID: 687634068
+Message: hola2
+--------------------
+Date: 10/1/2023
+Time: 9:48
+Group ID: 628369130
+Message: pichiii puuuuuu
+--------------------

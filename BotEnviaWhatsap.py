@@ -1,13 +1,7 @@
 import pandas as pd
 from openpyxl import load_workbook
 #import pywhatkit
-path='pl.csv'
-
-#https://web.whatsapp.com/send?phone=34687634068
-
-
 import os
-
 import time
 import webbrowser as web
 from datetime import datetime
@@ -19,6 +13,8 @@ import pyautogui as pg
 import pyperclip
 import keyboard
 from pywhatkit.core import core, exceptions, log
+
+#https://web.whatsapp.com/send?phone=999999999
 
 pg.FAILSAFE = False
 
@@ -41,12 +37,11 @@ def sendwhatmsg_instantly(
     
     pyperclip.copy(message) #line in work
     print("Copied")
-    time.sleep(1)
-
-    keyboard.press("ctrl")
-    keyboard.press("v")
-    keyboard.release("v")
-    keyboard.release("ctrl")
+    #time.sleep(1)
+    #keyboard.press("ctrl")
+    #keyboard.press("v")
+    #keyboard.release("v")
+    #keyboard.release("ctrl")
     time.sleep(1)
     keyboard.press("enter")
     keyboard.release("enter")
@@ -60,19 +55,10 @@ def sendwhatmsg_instantly(
 fichero = open('telefonos.txt')
 lineas = fichero.readlines()
 for i in range(len(lineas)):
-    s= lineas[i].split(',') #s se usa para separar
-    print(s[1])             # imprime los telefonos primera columna
+    s= lineas[i].split(',') #s se usa para separar             
     sendwhatmsg_instantly(s[0], s[1])  #se envian los datos al metodo para ser impreso
+    print(s[0],s[1], end=" ") # imprime los telefonos primera columna
     time.sleep(20)
 
 fichero.close()
-"""
-aun no funciona correctamente los mensajes son copiados en el portapapeles pero no se envian
-
-
-"""
-
-
-
-#sendwhatmsg_instantly("+34687634068", "Hello")
 
