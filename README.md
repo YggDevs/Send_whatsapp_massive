@@ -1,6 +1,4 @@
 # Send_whatsapp_massive
-# Send_whatsapp_massive
-
 
 _Proyecto para enviar whatsapps a todos los numeros de telefonos que iniquemos de manera automatica_
 
